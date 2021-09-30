@@ -1,0 +1,10 @@
+version: '3'
+services:
+  downloader:
+    build:
+      dockerfile: app.dockerfile
+      context: .
+    image: net_go
+    container_name: net_go
+    ports:
+      - "8006:8006"
